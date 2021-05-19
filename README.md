@@ -5,3 +5,5 @@ Sovellusta tehtäessä käytin apunani kurssilla opittuja kirjastoja ja menetelm
 
 Sovellus on valmistettu käyttäen React Nativea.
 Isossa roolissa oli react-native-elements kirjasto.
+
+
