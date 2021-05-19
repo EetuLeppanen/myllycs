@@ -19,7 +19,7 @@ export default function App() {
     updateList();    
   }, []);
 
-  // Save course
+ 
   const saveItem = () => {
     db.transaction(tx => {
         tx.executeSql('insert into pelaajaa (tapot, kuolemat, kartta) values (?, ?, ?);', [parseInt(tapot), parseInt(kuolemat), kartta]);    
@@ -27,7 +27,7 @@ export default function App() {
     )
   }
 
-  // Update courselist
+ 
   const updateList = () => {
     db.transaction(tx => {
       tx.executeSql('select * from pelaajaa;', [], (_, { rows }) =>
@@ -36,7 +36,7 @@ export default function App() {
     });
   }
 
-  // Delete course
+  
   const deleteItem = (id) => {
     db.transaction(
       tx => {
